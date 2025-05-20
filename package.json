@@ -1,0 +1,12 @@
+{
+  "name": "automation-and-security",
+  "version": "1.0.0",
+  "description": "A simple Node.js project for GitHub Actions case study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No actual tests run, but CI step is present.\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
