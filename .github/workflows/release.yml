@@ -1,0 +1,26 @@
+name: Auto-Tag Release
+
+on:
+  push:
+    branches:
+      - main 
+
+permissions:
+  contents: write 
+
+jobs:
+  tag_and_release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 
+
+      - name: Auto-tag based on package.json
+        uses: Klemensas/action-autotag@stable
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_prefix: "v" 
+
