@@ -1,6 +1,6 @@
 {
   "name": "automation-and-security",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple Node.js project for GitHub Actions case study",
   "main": "index.js",
   "scripts": {
